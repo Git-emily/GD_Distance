@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>City_Distance</title>
+</head>
+<body>
+    <div class="main">
+        <h1 style="color: brown;font-family: Georgia, 'Times New Roman', Times, serif ;">Distance Calculation</h1>
+        <p>
+            <span class="control-label">City A: </span> 
+            <input class = "form-control text-input" type="text" placeholder="input a city name or an address" id="city_A">
+            <span class="control-label" id="init_result1"></span>
+        </p>
+        <p>
+            <span class="control-label">City B: </span>
+            <input class="form-control text-input" type="text" placeholder="Please input a city name or an address" id="city_B">
+            <span class="control-label" id="init_result2"></span>
+        </p>
+        <p>
+            <span class="control-label">City Distance(KM): </span>
+            <div id="distance"></div>
+        </p>
+        <div>
+            <button id="get_coordinate" class="btn">Coordinate</button>
+            <button id="cal_distance" class="btn">Cal_Distance</button>
+            <button id="clear" class="btn">Clear</button>
+        </div>
+    </div>
+
+</body>
+
+<style type="text/css">
+    .main {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding-top: 5%;
+    }
+
+    /* .control-label{
+        
+    } */
+</style>
+
+<script type="text/javascript" src="./static/js/jquery-3.1.1/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="./static/js/plugins/jquery-ui.js"></script>
+<script type="text/javascript" src="./cal_distance.js"></script>
